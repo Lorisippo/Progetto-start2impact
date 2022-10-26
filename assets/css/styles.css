@@ -118,8 +118,8 @@ top: 50px;
 
 .image img{
   border: none;
-  width: 1280px;
-height: 802px;
+  max-width: 100%;
+  height: 100%;
 border-style: solid;
 border-color:#101C5B;
 opacity: 30%;
@@ -150,10 +150,13 @@ top: 950px;
 
 
 .whoiam {
-  padding-top: -20px;
+  padding-top: 50px;
 padding-bottom: 187px;
-padding-left: 2em;
+padding-left: 1em;
 background-color: #101C5B;
+display: flex;
+flex-wrap: wrap;
+
 }
 
 
@@ -173,11 +176,13 @@ background-color: #101C5B;
   font-size: 24px;
 }
 
-.bio p{
-  margin-bottom: 1em;
-  text-align: left;
-  text-align: justify;
-}
+.bio{
+
+  width: 50%;
+  margin-left: 1em;
+    margin-right: 7em;
+    text-align: justify;
+  }
 
 
 .bio ul{
@@ -186,6 +191,10 @@ background-color: #101C5B;
   padding-top: .5em;
   padding-bottom: .5em;
   color:#FF8A00
+}
+
+.bio li{
+  padding-bottom: .5em
 }
 
 
@@ -198,7 +207,7 @@ background-color: #101C5B;
   padding-left: 2em;
   background-color: #101C5B;
   display: flex;
-  flex-wrap: wrap;
+  
 
 }
 
@@ -379,13 +388,16 @@ height: 40px;
 }
 
 
-@media (max-width:749px) {
+@media screen and (max-width:749px) {
 
   .item{
   width: 100%;
-  color: #F5F5F5;
+  color: #F5F5F5;}
 
-  }
+  .bio{
+   width: 100%;
+}
+
 
 }
 
@@ -406,11 +418,6 @@ height: 40px;
     border-left: none;
   }
 
-  .bio {
-    max-width: 45%;
-    margin-left: 1em;
-    margin-right: 1em;
-  }
 
   .item{
   width: 50%;
