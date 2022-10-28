@@ -3,7 +3,14 @@
 <html lang="it">
   <head>
     <meta charset="utf-8">
+    <meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+      <meta property="og:type" content="website">
+    <meta property="og:title" content="Marcucci Loris Ippazio">
+    <meta property="og:description" content="Sito web personale di Marcucci Loris Ippazio: Competenze e progetti">
+    <meta propertu="og:image" content="./assets/img/presentazione.svg">
     <title>Loris Ippazio Marcucci</title>
+
      <link rel="icon" type="image/x-icon" href="./assets/img/logo.svg">
       <link rel='stylesheet' href='./assets/css/styles.css'>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Mukta:wght@700&display=swap" rel="stylesheet">
@@ -12,16 +19,23 @@
   </head>
   <body>
 
-  <header>
-    <nav>
-    <ul>
-      <li class='selected'>LIM</li>
+  <header class=header>
+      <a href="/" class=logo>LIM</a>
+      <input class='menubtn' id='menubtn' type="checkbox">
+      <label for="menubtn" class="menu-icon">
+        <span class="nav-icon"></span>
+        </label>
+
+    <ul class='menu'>
+
       <li><a href='#chisono'>Chi Sono</a></li>
       <li><a href='#skill'>Skill</a></li>
       <li><a href='#Portfolio'>Portfolio</a></li>
       <li><a href='#Contatti'>Contatti</a></li>
+
     </ul>
-    </nav>
+    </header>
+
 
 
     </div>
@@ -29,9 +43,10 @@
       <div class='hero'>
           <h1>Piacere,<br>mi chiamo Loris.</h1>
           <p> Sono uno studente di UX/UI design.</p>
+          </div>
           <div class="image">
-              <img src="./assets/img/computer.jpg" alt="Foto pagina web">
-</div>
+              <img src="./assets/img/computer.jpg" alt="Foto pagina web" style="max-width:100%;height:auto;">
+
 </div>
 
 
